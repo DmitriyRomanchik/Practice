@@ -1,5 +1,4 @@
 body{
-    background: grey;
     margin: 0px;
     padding: 0px;
 
@@ -17,6 +16,7 @@ a{
     display: -ms-flexbox;
     margin: 0px;
     padding: 0px;
+    flex-direction: column;
 }
 .header{
     background: url("image/color_overlay.png"), url("image/layer.png") no-repeat;
@@ -26,7 +26,7 @@ a{
     margin: 0px;
     padding: 0px;
 }
-.main{
+.main1{
     margin: 0px auto 0px auto;
     width: 1170px;
     height: 650px;
@@ -81,6 +81,7 @@ a{
 }
 .menu a:hover{
     color: #9da1aa;
+    text-shadow: 2px 2px 4px black;
     transition: 0.3s;
 }
 .caption, .button{
@@ -107,12 +108,110 @@ a{
     box-shadow: 2px 2px 4px black;
     transition: 0.3s;
 }
-.btn:hover{
 
-}
 .slider{
     margin-bottom: 35px;
 }
 
+.content{
+    width: 100%;
+    height: 1060px;
+    background: #f3f3f3;
+    margin: 0px;
+    padding: 0px;
+    color: black;
+}
+.main2{
+    margin: 0px auto 0px auto;
+    width: 1170px;
+    height: 1060px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.model{
+    font: 40px/1.3em Verdana Regular, Tahoma, "Trebuchet MS", sans-serif;;
+    width: auto;
+    height: 215px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text{
+    width: auto;
+    height: 625px;
+    background: yellowgreen;
+    display: flex;
+}
+.txt{
+    background: #f3f3f3;
+    text-align: left;
+    padding:20px 0px 0px 30px;
+}
+.txt h1{
+    color: rgb(214, 44, 1);
+    font: bold 30px Arial, Tahoma, "Trebuchet MS", san-serif;
+}
+.txt p{
+    color: #777777;
+    font: 18px/1.0em Verdana Regular, Tahoma, "Trebuchet MS", sans-serif;;
+}
 
+.btnX{
+    padding-top: 30px;
+}
+.button1{
+    margin-right:15px;
+}
 
+.btnX a {
+    color: #333333;
+}
+.btnX a.button1 { /*Рисуем кнопку*/
+     border: 1px solid #777777;
+     padding: 10px 25PX;
+     border-radius: 2px;
+     text-decoration: none;
+     transition: 0.3s;
+}
+.btnX a.button1:hover{
+    color: white;
+    background: #777777;
+}
+.comment{
+    width: auto;
+    height:220px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+.comment .foto{
+    margin-left: 20px;
+    padding-top: 50px;
+    float: left;
+}
+.comment-text{
+    margin: 55px 0px 0px 50px;
+    background: url("image/Shape1.png") no-repeat center;
+    width: 297px;
+    height: 122px;
+}
+.comment-text p{
+    color: #777777;
+    font: 16px/1.0em Verdana Regular, Tahoma, "Trebuchet MS", sans-serif;
+    padding: 0px 25px;
+    text-align: left;
+}
+.footer{
+    width: 100%;
+    height: 85px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer p{
+    font: 16px/1.0em Verdana Regular, Tahoma, "Trebuchet MS", sans-serif;
+    color: black;
+}
